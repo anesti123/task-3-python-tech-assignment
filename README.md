@@ -26,24 +26,25 @@ A simple ETL (Extract, Transform, Load) pipeline to process CSV data into JSON.
 
 ## Project Structure
 
+```plaintext
 tech-assignment-python/
 ├── data/
-│ └── data.csv # Input CSV file with sample data.
-├── output.json # Output JSON file generated after running the ETL process.
-├── main.py # Entry point of the project.
-├── README.md # Project documentation.
-├── requirements.txt # (Optional) List of project dependencies.
+│   └── data.csv            # Input CSV file
+├── output.json             # Output JSON file
+├── main.py                 # Main entry point
+├── README.md
+├── requirements.txt
 ├── src/
-│ └── features/
-│ └── etl/
-│ ├── **init**.py
-│ ├── extract.py # Contains the CSV extraction logic.
-│ ├── transform.py # Contains the data transformation logic.
-│ └── load.py # Contains the data loading (JSON writing) logic.
+│   └── features/
+│       └── etl/
+│           ├── __init__.py
+│           ├── extract.py    # CSV extraction
+│           ├── transform.py  # Data transformation
+│           └── load.py       # JSON writing
 └── tests/
-├── **init**.py
-└── test_etl.py # Unit tests for the ETL modules.
-
+    ├── __init__.py
+    └── test_etl.py         # ETL unit tests
+```
 ## Installation
 
 1. Install Python 3.6+ from https://www.python.org/downloads/
@@ -73,17 +74,6 @@ pytest tests/
 
 ## Troubleshooting
 
-Issue: "ModuleNotFoundError: No module named 'etl'"
-Solution:
-
-- Run from project root directory
-- Ensure virtual environment is active
-
-Issue: "File not found"
-Solution:
-
-- Verify data.csv exists in data/input/
-- Use absolute paths if needed
 
 Contact
-For questions or feedback, please contact [Anesti Andoni] at [anestiandoniii@gmail.com]. """
+For questions or feedback, please contact Anesti Andoni at anestiandoniii@gmail.com.
